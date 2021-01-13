@@ -1,0 +1,25 @@
+body {
+    background-image: url("plano.jpg");
+    background-repeat: no-repeat;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.alinhamento{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.deus{
+    grid-column: 1;
+    padding-left: 140px;
+    
+}
+
+.demonio{
+    grid-column: 2;
+    padding-left: 855px;
+}

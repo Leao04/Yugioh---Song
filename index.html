@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="duel.css">
+    <title>Are you sure?</title>
+</head>
+
+<body>
+
+
+
+    <audio id="myAudio">
+        <source src="yugi.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="yubel">
+        <source src="gx.mp3" type="audio/mpeg">
+    </audio>
+
+<div class="topo">
+    <img src="pausar.jpg" onclick="pauseAudio()" height="100px">
+    <img src="pausar2.jpg" onclick="pauseGx()" height="100px">
+</div>
+
+    <div class=alinhamento>
+        <img class="deus" src="ra.jpg" onclick="playAudio()" height="200px">
+        <img class="demonio" src="yubel.jpg" onclick="playGx()" height="200px">
+    </div>
+
+    <script>
+        var x = document.getElementById("myAudio");
+
+        function playAudio() {
+            x.play();
+        }
+
+        function pauseAudio() {
+            x.pause();
+        };
+
+        var y = document.getElementById("yubel");
+
+        function playGx() {
+            y.play();
+        }
+
+        function pauseGx() {
+            y.pause();
+        }
+
+
+    </script>
+
+</body>
+
+</html>
